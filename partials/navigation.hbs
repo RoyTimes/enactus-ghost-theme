@@ -1,0 +1,38 @@
+<!-- <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul id="global-nav" class="nav">
+        {{#foreach navigation}}
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+    {{#if @labs.subscribers}}
+        <a class="subscribe-button" href="{{@blog.url}}/subscribe/">Subscribe</a>
+    {{else}}
+        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+    {{/if}}
+</div>
+<span class="nav-cover"></span> -->
+
+
+<header id="header">
+    <div class="wrapper">
+        <a id="branding" href="/">
+            <img src="{{@blog.logo}}" alt="Enactus USA" height="88" />
+        </a>
+        <nav>
+            <ul id="utility-nav" class="nav">
+                <li><a style="text-transform: none;" href="{{@blog.url}}">{{@blog.title}}</a></li>
+                <li><a target="_blank" href="https://portal.enactus.org/">Enactus Portal</a></li>
+                <li><a target="_blank" href="http://www.enactusunitedstates.org">Enactus United States</a></li>
+            </ul>
+            <ul id="global-nav" class="nav">
+                {{#foreach navigation}}
+                    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+                {{/foreach}}
+            </ul>
+        </nav>
+    </div>
+</header>

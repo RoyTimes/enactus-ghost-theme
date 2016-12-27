@@ -1,0 +1,18 @@
+{
+    "name": "enactus",
+    "description": "Specially Designed theme for Enactus at UW",
+    "demo": "https://enactusuw.org",
+    "version": "1.0",
+    "engines": {
+        "ghost": ">=0.9.0 <1.0.0"
+    },
+    "author": {
+        "name": "Song Zhou",
+        "email": "zs@ziorix.com",
+        "url": "https://github.com/RoyTimes"
+    },
+    "keywords": [
+        "ghost",
+        "theme"
+    ]
+}
